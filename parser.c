@@ -20,10 +20,25 @@ void parse(char* json, int length) {
     }
     char* objects = (char*)malloc(sizeof(char) * (length - 2));
     slice(json, objects, 1, length - 1);
+    free(json);
 }
 
-void object_parse(char* json, int length) {
-    int index = 0;
+void string_parse(char* json) {
+}
+
+void number_parse(char* json) {
+}
+
+void array_parse(char* json) {
+}
+
+void boolean_parse(char* json) {
+}
+
+void null_parse(char* json) {
+}
+
+void object_parse(char* json) {
 }
 
 char* read_file(char* filename) {
